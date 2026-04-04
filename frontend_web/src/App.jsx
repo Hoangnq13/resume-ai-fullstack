@@ -30,8 +30,8 @@ function App() {
     formData.append('pdf_file', file)
 
     try {
-      // 🚀 BẮN API GO GO GO!
-      const response = await axios.post('http://127.0.0.1:8000/api/parse-resume/', formData, {
+      // 🚀 BẮN API LÊN ĐÁM MÂY RENDER GO GO GO!
+      const response = await axios.post('https://resume-ai-fullstack-3a0o.onrender.com/api/parse-resume/', formData, {
         headers: { 'Content-Type': 'multipart/form-data' }
       })
       
