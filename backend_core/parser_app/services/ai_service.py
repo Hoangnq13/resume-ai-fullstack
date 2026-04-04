@@ -41,7 +41,7 @@ def parse_resume_to_json(pdf_file_path: str):
     noi_dung_cv = "\\n".join([page.page_content for page in vi_danh_text])
 
     # Bước 2: Setup Phép Thuật (LLM & Khuôn JSON)
-    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash", temperature=0) # Temp=0 để AI KHÔNG ĐƯỢC CHẾ THÊM, chỉ BÓC TÁCH.
+    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash", temperature=0) # Temp=0 để AI KHÔNG ĐƯỢC CHẾ THÊM, chỉ BÓC TÁCH.
     parser = JsonOutputParser(pydantic_object=ResumeSchema)
 
     # Bước 3: Đe doạ AI
