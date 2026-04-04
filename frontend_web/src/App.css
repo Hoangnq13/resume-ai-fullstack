@@ -1,0 +1,88 @@
+/* { box-sizing: border-box; } */
+body {
+  margin: 0;
+  font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a;
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.app-container {
+  width: 90%;
+  max-width: 800px;
+  background: #1e293b;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+  text-align: center;
+}
+.title {
+  color: #38bdf8;
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+}
+.subtitle {
+  color: #94a3b8;
+  margin-bottom: 30px;
+}
+.upload-zone {
+  border: 2px dashed #475569;
+  border-radius: 12px;
+  padding: 50px 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+  background: #0f172a;
+}
+.upload-zone:hover {
+  border-color: #38bdf8;
+  background: #162032;
+}
+.file-name {
+  color: #4ade80;
+  font-weight: bold;
+  margin-top: 15px;
+}
+.btn-submit {
+  background: linear-gradient(135deg, #0284c7, #2563eb);
+  color: white;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  width: 100%;
+}
+.btn-submit:hover {
+  transform: scale(1.02);
+}
+.btn-submit:disabled {
+  background: #475569;
+  cursor: not-allowed;
+}
+/* Card Kết Quả */
+.result-card {
+  margin-top: 40px;
+  background: #0f172a;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  border-left: 5px solid #38bdf8;
+}
+.section-title {
+  color: #38bdf8;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 10px;
+}
+.tag {
+  display: inline-block;
+  background: #334155;
+  padding: 5px 12px;
+  border-radius: 20px;
+  margin: 5px 5px 0 0;
+  font-size: 0.9rem;
+}
